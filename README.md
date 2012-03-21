@@ -32,3 +32,6 @@ Considerar y discutir dos posibles definiciones diferentes del predicado symmetr
 * Definir un predicado que describa la representación matricial de un sistema de ecuaciones - `ecuaciones(M,N,P,E)`: E es el sistema de ecuaciones M x N = P, siendo M la matriz de coeficientes, N el vector --lista-- de variables y P el vector de términos independientes.
 
 Considerar y discutir dos posibles definiciones diferentes del predicado ecuaciones/4, utilizando o no product/3.
+
+##Por hacer
+Ver [este enlace](https://github.com/yarox/Programacion-Declarativa/issues).
