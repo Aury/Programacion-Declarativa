@@ -27,6 +27,14 @@ first_column([[I|Is]|Rs], [I|Col], [Is|Rest]) :-
 % a la diagonal principal.
 symmetrical(X) :- transpose(X, X).
 
+symmetrical2(X) :- symmetrical(X,X,1).
+symmetrical2([H|S], T, N) :- 
+	column(T,N,H), 
+	N1 is N+1, 
+	symmetrical(S,T,N1).
+symmetrical2([H], T, N) :- 
+	column(T,N,H).
+
 % transpose(X, Y): Y es la matriz traspuesta de X.
 transpose([[]|_], []).
 transpose([[I|Is]|Rs], [Col|MT]) :-
